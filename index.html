@@ -5,6 +5,7 @@
             body {
                 padding: 0px;
                 margin: 0px;
+				background-color: #1A1A1A;
             }
             #topbar-triangle {
                 position: absolute;
@@ -12,12 +13,12 @@
                 left: 0px;
                 width: 0;
                 height: 0;
-                border-top: 125px solid #740000;
+                border-top: 125px solid #530000;
                 border-right: 225px solid transparent;
             }
             #topbar {
-                background: black;
-                color: white;
+                background: #FFFD66;
+                color: black;
                 text-align: center;
                 margin-top:	15px;
             }
@@ -26,13 +27,38 @@
                 font-size: 28px;
                 font-weight: bold;
             }
+			#MainBody
+			{
+				position: absolute;
+				text-align: center;
+				top: 25%;
+				left: 25%;
+				right 25%;
+				bottom: 25%;
+			}
+		   .center-block
+		   {
+				margin-left: 10%;
+				margin-right: 10%;
+				margin-top: 30px;
+				background-color: lavender;
+				border-radius: 10px;
+			}
+            .center-block > p {
+                padding: 10px;
+            }
 
         </style>
-    </head>
-    <body>
-        <div id="topbar-triangle"></div>
-        <div id="topbar">
+	</head>
+
+		<body>
+			<div id="topbar-triangle"></div>
+			<div id="topbar">
             <div class="title-text">Thundermagnet</div>
-        </div>
-    </body>
+			</div>
+			<div class="center-block">
+				<p>Welcome to the Thundermagnet website, where you can get exciting updates and other cool facts as soon as they are available!</p>
+				<p>You are here.  No one else is here exactly the same way you are.</p>
+			</div>
+		</body>
 </html>
