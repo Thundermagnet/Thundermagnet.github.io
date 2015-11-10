@@ -8,7 +8,7 @@
 				background-color: #1A1A1A;
             }
             #topbar-triangle {
-                position: absolute;
+                position: fixed;
                 top: 0px;
                 left: 0px;
                 width: 0;
@@ -17,48 +17,80 @@
                 border-right: 225px solid transparent;
             }
             #topbar {
-                background: #FFFD66;
+                position: fixed;
+				background: #FFFD66;
                 color: black;
                 text-align: center;
-                margin-top:	15px;
+                top: 0px;
+				left: 0px;
+				right: 0px;
             }
+			#blankspace
+			{
+			margin-bottom: 5%;
+			}
             .title-text {
                 padding: 10px;
                 font-size: 28px;
                 font-weight: bold;
             }
-			#MainBody
-			{
-				position: absolute;
-				text-align: center;
-				top: 25%;
-				left: 25%;
-				right 25%;
-				bottom: 25%;
-			}
+			.smaller-title-text {
+                padding: 10px;
+                font-size: 22px;
+                font-weight: bold;
+            }
 		   .center-block
 		   {
-				margin-left: 10%;
-				margin-right: 10%;
-				margin-top: 30px;
+				margin-left: 30%;
+				margin-right: 30%;
+				margin-top: 90px;
 				background-color: lavender;
 				border-radius: 10px;
 			}
-            .center-block > p {
-                padding: 10px;
+			.LeftSideNotes
+			{
+				margin-left: 3%;
+				margin-right: 73%;
+				background-color: lavender;
+				border-radius: 10px;
+				margin-top: -90px;
+				text-align: left;
+				padding: 10px;
+			}
+			.center-block > p
+			{
+				padding: 5px;
+            }
+			.LeftSideNotes > p
+			{
+				padding: 5px;
             }
 
         </style>
 	</head>
 
 		<body>
-			<div id="topbar-triangle"></div>
 			<div id="topbar">
-            <div class="title-text">Thundermagnet</div>
+				<div class="title-text">Thundermagnet</div>
 			</div>
+			<div id="topbar-triangle"></div>
 			<div class="center-block">
 				<p>Welcome to the Thundermagnet website, where you can get exciting updates and other cool facts as soon as they are available!</p>
 				<p>You are here.  No one else is here exactly the same way you are.</p>
 			</div>
+			<div class="LeftSideNotes">
+				<h1 style="font-size:135%;text-align:center">Albums</h1>
+				<p style="font-weight:bold;text-align:center">Rave Forever</p>
+				<p>1: Ultimate Introductory Rave Sequence<br>2: War is Nigh<br>3: Theme of the Punish Macro<br>4: Ambient Rave<br>5: Ballad of the Firebeast<br>6: Onward to Destiny<br>7: Storytime (Pipes in the Church)<br>8: Amazing Grace<br>9: Time Moves On<br>10: Stay Silly and B#<br>11: Current State of the<br>American Government</p>
+				<p style="font-weight:bold;text-align:center">Storm</p>
+				<p>1: Calm Before the Storm<br>2: Blown Over<br>3: Cyclonic Winds<br>4: Electroshock<br>5: Updraft<br>6: Rainline<br>7: Psycho Rain Dance<br>8: Surge<br>9: Hailstorm - Tonitrui Magnetem<br>10: Frostbite<br>11:Aftermath - Power of Arpeggiation<br>12: Fancy Americans Meet Disco Party<br>13: Dance of Dark Shadows<br>14: Dance of Dark Shadows 2<br>15: Crispy Cream Bacon<br>16: Dark Strawberries are Tasty<br>17: Flanger My Good Fellow<br>18: Phantasmic Sequencer<br>19: Knightwalker<br>20: The Skippy Sheep<br> 21: Storytime<br>22: Storytime - Christmas<br>23: Unleash the Beat<br>24: Western Winds</p>
+				<p style="font-weight:bold;text-align:center">Quark Mode (Single)</p>
+				<p>1: Quark Mode</p>
+				<p style="font-weight:bold;text-align:center">Dance in a Trance</p>
+				<p>1: Serixdipity (feat: Bindernews)<br>2: The Ride<br>3: Tangite Paradisi<br>4: Sequence<br>5: Symphony of Strings<br>6: Dark Matter<br>7: Fancy Britains Meet Rave Party<br>8: Battle Stronghold<br>9: Oh Yeah</p>
+				<p style="font-weight:bold;text-align:center">Total Annihilation (EP)</p>
+				<p>1: Sunrise<br>2: Reaction<br>3: Fireside Dream<br>4: The Command of Dance<br>5: Edge of the Blade</p>
+			</div>
+			<div class="blankspace">You should not be able to read this text on the webpage without highlighting it.  Kudos to you if you found it!</div>
 		</body>
 </html>
