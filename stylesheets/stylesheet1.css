@@ -1,0 +1,87 @@
+body
+{
+	padding: 0px;
+	margin: 0px;
+	background-color: #1A1A1A;
+}
+#topbar-triangle
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-top: 125px solid #530000;
+    border-right: 225px solid transparent;
+}
+#topbar
+			{
+    position: fixed;
+	background: #FFFD66;
+    color: black;
+    text-align: center;
+    top: 0px;
+	left: 0px;
+	right: 0px;
+}
+#blankspace
+{
+	margin-bottom: 5%;
+	text-color:#1A1A1A;
+}
+.title-text
+{
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.smaller_title_text
+{
+    font-size: 22px;
+    font-weight: bold;
+	text-align: center;
+}
+.small_heading_text
+{
+	font-size: 17px;
+    font-weight: bold;
+	text-align: center;
+}
+.center-block
+		   {
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 90px;
+	background-color: lavender;
+	border-radius: 10px;
+}
+.center-block > p
+{
+	padding: 10px;
+}
+.LeftSideNotes
+{
+	text-align: center;
+	font-size: 22px;
+    font-weight: bold;
+	margin-left: 3%;
+	margin-right: 73%;
+	background-color: lavender;
+	border-radius: 10px;
+	margin-top: -8%;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+}
+.LeftSideNotes > p
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+.classic_style
+{
+	font-size: 16px;
+	text-align: left;
+	font-weight: normal;
+}
