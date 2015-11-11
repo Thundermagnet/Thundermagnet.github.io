@@ -17,17 +17,19 @@ body
 #topbar
 			{
     position: fixed;
-	background: #FFFD66;
-    color: black;
+	background: #7E7E7E;
+    color: gold;
     text-align: center;
-    top: 0px;
+    top: -1%;
 	left: 0px;
 	right: 0px;
+	font-size: 16px;
+	padding: 3px;
 }
 #blankspace
 {
 	margin-bottom: 5%;
-	text-color:#1A1A1A;
+	color:#1A1A1A;
 }
 .title-text
 {
@@ -59,29 +61,34 @@ body
 {
 	padding: 10px;
 }
-.LeftSideNotes
-{
-	text-align: center;
-	font-size: 22px;
-    font-weight: bold;
-	margin-left: 3%;
-	margin-right: 73%;
-	background-color: lavender;
-	border-radius: 10px;
-	margin-top: -8%;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-}
-.LeftSideNotes > p
-{
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 5px;
-}
 .classic_style
 {
 	font-size: 16px;
 	text-align: left;
 	font-weight: normal;
+}
+
+a:link {
+    color: gold;
+}
+a:visited {
+    color: maroon;
+}
+a:hover {
+    color: yellow;
+}
+a:active {
+    color: maroon;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
 }
