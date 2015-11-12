@@ -17,7 +17,7 @@ body
 #topbar
 			{
     position: fixed;
-	background: #7E7E7E;
+	background: #530000;
     color: gold;
     text-align: center;
     top: -1%;
@@ -69,16 +69,16 @@ body
 }
 
 a:link {
-    color: gold;
+    color: #2FD5FF;
 }
 a:visited {
-    color: maroon;
+    color: #7D7CA8;
 }
 a:hover {
-    color: yellow;
+    color: 0000EE;
 }
 a:active {
-    color: maroon;
+    color: 0000EE;
 }
 a:link {
     text-decoration: none;
