@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+		<meta charset="utf-8">
+		<title>Published List - Thundermagnet</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="stylesheets/stylesheet1.css">
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -8,30 +11,97 @@
 			ga('send', 'pageview');
 		</script>
 	</head>
-		<body>
+		<body class="catalog-page">
 			<script src="scripts.js"></script>
-			<div id="topbar">
-				<div class="title-text">Thundermagnet</div>
-				<a href="/index.html">Home</a>
-			</div>
-			<div style="position: fixed; left: 7px; top: 9.5px;">
-				<img src="images/logo_large.gif" alt="Error loading image." style="top: 0; left: 0;width:50px;height:50px;padding:0;">
-			</div>
-			<div class="center-block">
-				<p class="smaller_title_text">Albums</p>
-				<p class="small_heading_text">Coming Soon: Unnamed Album</p>
-				<p class="small_heading_text">Rave Forever</p>
-				<p class="classic_style">1: Ultimate Introductory Rave Sequence<br>2: War is Nigh<br>3: Theme of the Punish Macro<br>4: Ambient Rave<br>5: Ballad of the Firebeast<br>6: Onward to Destiny<br>7: Storytime (Pipes in the Church)<br>8: Amazing Grace<br>9: Time Moves On<br>10: Stay Silly and B#<br>11: Current State of the American Government</p>
-				<p class="small_heading_text">Storm</p>
-				<p class="classic_style">1: Calm Before the Storm<br>2: Blown Over<br>3: Cyclonic Winds<br>4: Electroshock<br>5: Updraft<br>6: Rainline<br>7: Psycho Rain Dance<br>8: Surge<br>9: Hailstorm - Tonitrui Magnetem<br>10: Frostbite<br>11:Aftermath - Power of Arpeggiation<br>12: Fancy Americans Meet Disco Party<br>13: Dance of Dark Shadows<br>14: Dance of Dark Shadows 2<br>15: Crispy Cream Bacon<br>16: Dark Strawberries are Tasty<br>17: Flanger My Good Fellow<br>18: Phantasmic Sequencer<br>19: Knightwalker<br>20: The Skippy Sheep<br> 21: Storytime<br>22: Storytime - Christmas<br>23: Unleash the Beat<br>24: Western Winds</p>
-				<p class="small_heading_text">Quark Mode (Single)</p>
-				<p class="classic_style">1: Quark Mode</p>
-				<p class="small_heading_text">Dance in a Trance</p>
-				<p class="classic_style">1: Serixdipity (feat: Bindernews)<br>2: The Ride<br>3: Tangite Paradisi<br>4: Sequence<br>5: Symphony of Strings<br>6: Dark Matter<br>7: Fancy Britains Meet Rave Party<br>8: Battle Stronghold<br>9: Oh Yeah</p>
-				<p class="small_heading_text">Total Annihilation (EP)</p>
-				<p class="classic_style">1: Sunrise<br>2: Reaction<br>3: Fireside Dream<br>4: The Command of Dance<br>5: Edge of the Blade</p>
-				<p></p>
-			</div>
+			<header id="topbar">
+				<a class="site-brand" href="/index.html" aria-label="Thundermagnet home">
+					<img class="site-logo" src="images/thundermagnet-logo.png" alt="Thundermagnet" width="2172" height="724">
+				</a>
+				<nav class="site-nav" aria-label="Main navigation">
+					<a href="/index.html">Home</a>
+				</nav>
+			</header>
+			<main class="center-block">
+				<div class="catalog-heading">
+					<h1>Albums</h1>
+					<p>Coming Soon: Unnamed Album</p>
+				</div>
+				<section class="album">
+					<h2>Rave Forever</h2>
+					<ol class="track-list">
+						<li>1: Ultimate Introductory Rave Sequence</li>
+						<li>2: War is Nigh</li>
+						<li>3: Theme of the Punish Macro</li>
+						<li>4: Ambient Rave</li>
+						<li>5: Ballad of the Firebeast</li>
+						<li>6: Onward to Destiny</li>
+						<li>7: Storytime (Pipes in the Church)</li>
+						<li>8: Amazing Grace</li>
+						<li>9: Time Moves On</li>
+						<li>10: Stay Silly and B#</li>
+						<li>11: Current State of the American Government</li>
+					</ol>
+				</section>
+				<section class="album">
+					<h2>Storm</h2>
+					<ol class="track-list">
+						<li>1: Calm Before the Storm</li>
+						<li>2: Blown Over</li>
+						<li>3: Cyclonic Winds</li>
+						<li>4: Electroshock</li>
+						<li>5: Updraft</li>
+						<li>6: Rainline</li>
+						<li>7: Psycho Rain Dance</li>
+						<li>8: Surge</li>
+						<li>9: Hailstorm - Tonitrui Magnetem</li>
+						<li>10: Frostbite</li>
+						<li>11:Aftermath - Power of Arpeggiation</li>
+						<li>12: Fancy Americans Meet Disco Party</li>
+						<li>13: Dance of Dark Shadows</li>
+						<li>14: Dance of Dark Shadows 2</li>
+						<li>15: Crispy Cream Bacon</li>
+						<li>16: Dark Strawberries are Tasty</li>
+						<li>17: Flanger My Good Fellow</li>
+						<li>18: Phantasmic Sequencer</li>
+						<li>19: Knightwalker</li>
+						<li>20: The Skippy Sheep</li>
+						<li>21: Storytime</li>
+						<li>22: Storytime - Christmas</li>
+						<li>23: Unleash the Beat</li>
+						<li>24: Western Winds</li>
+					</ol>
+				</section>
+				<section class="album">
+					<h2>Quark Mode (Single)</h2>
+					<ol class="track-list">
+						<li>1: Quark Mode</li>
+					</ol>
+				</section>
+				<section class="album">
+					<h2>Dance in a Trance</h2>
+					<ol class="track-list">
+						<li>1: Serixdipity (feat: Bindernews)</li>
+						<li>2: The Ride</li>
+						<li>3: Tangite Paradisi</li>
+						<li>4: Sequence</li>
+						<li>5: Symphony of Strings</li>
+						<li>6: Dark Matter</li>
+						<li>7: Fancy Britains Meet Rave Party</li>
+						<li>8: Battle Stronghold</li>
+						<li>9: Oh Yeah</li>
+					</ol>
+				</section>
+				<section class="album">
+					<h2>Total Annihilation (EP)</h2>
+					<ol class="track-list">
+						<li>1: Sunrise</li>
+						<li>2: Reaction</li>
+						<li>3: Fireside Dream</li>
+						<li>4: The Command of Dance</li>
+						<li>5: Edge of the Blade</li>
+					</ol>
+				</section>
+			</main>
 			<div id="blankspace">This text is not readable without highlighting it.  You have too much time if you found it!</div>
 		</body>
 </html>
