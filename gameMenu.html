@@ -17,16 +17,29 @@
 				</nav>
 			</header>
 			<main class="center-block">
-				<div class="page-intro">
-					<h1>Choose a game!</h1>
-					<p>More coming whenever I get around to it!</p>
-				</div>
 				<ul class="game-list">
-					<li><button class="game-card" type="button" aria-haspopup="dialog" aria-controls="beast-hunt-choices"><img class="game-logo" src="images/beast-hunt-logo.png" alt="Beast Hunt" width="1536" height="1024"></button></li>
-					<li><button class="game-card" type="button" aria-haspopup="dialog" aria-controls="minetrap-choices"><img class="game-logo" src="images/minetrap-logo.png" alt="Mine Trap Reborn" width="640" height="360"></button></li>
-					<li><a class="game-card" href="https://store.steampowered.com/app/2056530/Laser_Lightshow/"><img class="game-logo" src="images/laser-lightshow-logo.png" alt="Laser Lightshow" width="1280" height="720"></a></li>
+					<li><button class="game-card" type="button" aria-haspopup="dialog" aria-controls="laser-lightshow-choices"><img class="game-logo" src="images/laser-lightshow-logo.png" alt="Laser Lightshow" width="1280" height="720"><time class="game-release" datetime="2026-11">November 2026</time></button></li>
+					<li><button class="game-card" type="button" aria-haspopup="dialog" aria-controls="beast-hunt-choices"><img class="game-logo" src="images/beast-hunt-logo.png" alt="Beast Hunt" width="1536" height="1024"><time class="game-release" datetime="2026-10">October 2026</time></button></li>
+					<li><button class="game-card" type="button" aria-haspopup="dialog" aria-controls="minetrap-choices"><img class="game-logo" src="images/minetrap-logo.png" alt="Mine Trap Reborn" width="640" height="360"><time class="game-release" datetime="2020-10">October 2020</time></button></li>
 				</ul>
 			</main>
+			<dialog class="game-choices" id="laser-lightshow-choices" aria-labelledby="laser-lightshow-title" aria-describedby="laser-lightshow-prompt">
+				<div class="choices-header">
+					<div><p class="choices-eyebrow">Explore the game</p><h2 id="laser-lightshow-title">Laser Lightshow</h2></div>
+					<form method="dialog"><button class="close-choices" aria-label="Close choices" autofocus>&times;</button></form>
+				</div>
+				<p class="choices-prompt" id="laser-lightshow-prompt">Find the full game on Steam or visit the official website.</p>
+				<div class="version-grid">
+					<a class="version-card" href="https://store.steampowered.com/app/2056530/Laser_Lightshow/">
+						<img class="version-preview" src="images/laser-lightshow-full-preview.jpg" alt="A Laser Lightshow puzzle with mirrors and colored targets" width="2559" height="1599" loading="lazy">
+						<div class="version-details"><span class="version-platform">Steam</span><h3>Full game</h3><p>Visit Laser Lightshow's Steam store page.</p><span class="version-action">View on Steam <span aria-hidden="true">&nearr;</span></span></div>
+					</a>
+					<a class="version-card" href="https://laserlightshow.net/">
+						<img class="version-preview" src="images/laser-lightshow-website-preview.jpg" alt="Laser Lightshow's official website" width="1280" height="720" loading="lazy">
+						<div class="version-details"><span class="version-platform">laserlightshow.net</span><h3>Official website</h3><p>Explore Laser Lightshow's dedicated website.</p><span class="version-action">Visit website <span aria-hidden="true">&nearr;</span></span></div>
+					</a>
+				</div>
+			</dialog>
 			<dialog class="game-choices" id="beast-hunt-choices" aria-labelledby="beast-hunt-title" aria-describedby="beast-hunt-prompt">
 				<div class="choices-header">
 					<div><p class="choices-eyebrow">Choose your version</p><h2 id="beast-hunt-title">Beast Hunt</h2></div>
