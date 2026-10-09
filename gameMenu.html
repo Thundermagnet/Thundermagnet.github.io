@@ -5,6 +5,7 @@
 		<title>Games List - Thundermagnet</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="stylesheets/stylesheet1.css">
+		<script src="gameMenu.js" defer></script>
 	</head>
 		<body class="games-page">
 			<header id="topbar">
@@ -21,10 +22,44 @@
 					<p>More coming whenever I get around to it!</p>
 				</div>
 				<ul class="game-list">
-					<li><a href="/beastHunt.html">Beast Hunt</a></li>
-					<li><a href="/minetrap.html">Minetrap</a></li>
-					<li><a href="https://laserlightshow.net">Laser Lightshow</a></li>
+					<li><button class="game-card" type="button" aria-haspopup="dialog" aria-controls="beast-hunt-choices"><img class="game-logo" src="images/beast-hunt-logo.png" alt="Beast Hunt" width="1536" height="1024"></button></li>
+					<li><button class="game-card" type="button" aria-haspopup="dialog" aria-controls="minetrap-choices"><img class="game-logo" src="images/minetrap-logo.png" alt="Mine Trap Reborn" width="640" height="360"></button></li>
+					<li><a class="game-card" href="https://store.steampowered.com/app/2056530/Laser_Lightshow/"><img class="game-logo" src="images/laser-lightshow-logo.png" alt="Laser Lightshow" width="1280" height="720"></a></li>
 				</ul>
 			</main>
+			<dialog class="game-choices" id="beast-hunt-choices" aria-labelledby="beast-hunt-title" aria-describedby="beast-hunt-prompt">
+				<div class="choices-header">
+					<div><p class="choices-eyebrow">Choose your version</p><h2 id="beast-hunt-title">Beast Hunt</h2></div>
+					<form method="dialog"><button class="close-choices" aria-label="Close choices" autofocus>&times;</button></form>
+				</div>
+				<p class="choices-prompt" id="beast-hunt-prompt">A new hunt awaits. Or revisit where it began.</p>
+				<div class="version-grid">
+					<article class="version-card version-card-coming-soon">
+						<img class="version-preview" src="images/beast-hunt-full-preview.png" alt="A spider encounter in Beast Hunt's lantern-lit caverns" width="1920" height="1080" loading="lazy">
+						<div class="version-details"><span class="version-platform">Steam</span><h3>Full game</h3><p>A first-person hunt through the caverns.</p><span class="version-action version-status">Coming soon to Steam</span></div>
+					</article>
+					<a class="version-card" href="/beastHunt.html">
+						<img class="version-preview version-preview-alpha" src="images/beast-hunt-alpha-preview.jpg" alt="The original Beast Hunt browser alpha" width="320" height="320" loading="lazy">
+						<div class="version-details"><span class="version-platform">Browser</span><h3>Alpha version</h3><p>Play the original browser game.</p><span class="version-action">Play alpha <span aria-hidden="true">&rarr;</span></span></div>
+					</a>
+				</div>
+			</dialog>
+			<dialog class="game-choices" id="minetrap-choices" aria-labelledby="minetrap-title" aria-describedby="minetrap-prompt">
+				<div class="choices-header">
+					<div><p class="choices-eyebrow">Choose your version</p><h2 id="minetrap-title">Mine Trap Reborn</h2></div>
+					<form method="dialog"><button class="close-choices" aria-label="Close choices" autofocus>&times;</button></form>
+				</div>
+				<p class="choices-prompt" id="minetrap-prompt">Head into the full game, or try the original alpha.</p>
+				<div class="version-grid">
+					<a class="version-card" href="https://store.steampowered.com/app/1310390/Mine_Trap_Reborn/">
+						<img class="version-preview" src="images/minetrap-full-preview.jpg" alt="Mine Trap Reborn on Steam" width="600" height="338" loading="lazy">
+						<div class="version-details"><span class="version-platform">Steam</span><h3>Full game</h3><p>Dig, trap, and explore 130 levels.</p><span class="version-action">View on Steam <span aria-hidden="true">&nearr;</span></span></div>
+					</a>
+					<a class="version-card" href="/minetrap.html">
+						<img class="version-preview version-preview-alpha" src="images/minetrap-alpha-preview.jpg" alt="The original Minetrap browser alpha" width="992" height="768" loading="lazy">
+						<div class="version-details"><span class="version-platform">Browser</span><h3>Alpha version</h3><p>Play the original browser game.</p><span class="version-action">Play alpha <span aria-hidden="true">&rarr;</span></span></div>
+					</a>
+				</div>
+			</dialog>
 		</body>
 </html>
